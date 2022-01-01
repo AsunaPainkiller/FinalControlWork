@@ -42,11 +42,18 @@ if (choise == 1)
         }
     }
     count = 0;
-    Console.WriteLine("Конечный результат:");
-    while (count <count2)
+    if (count2 == 0)
     {
-        Console.WriteLine($"{arr2[count]}");
-        count++;
+        Console.WriteLine("В данном массиве нет ни одного чётного числа");
+    }
+    else
+    {
+        Console.WriteLine("Конечный результат:");
+        while (count <count2)
+        {
+            Console.WriteLine($"{arr2[count]}");
+            count++;
+        }
     }
 }
 if (choise == 2)
@@ -95,10 +102,17 @@ if (choise == 2)
         }
     }
     ccount = 0;
-    Console.WriteLine("Конечный результат:");
-    while (ccount <ccount2)
+    if (ccount2 == 0)
     {
-        Console.WriteLine($"{array2[ccount]}");
-        ccount++;
+        Console.WriteLine("В данном массиве нет ни одного чётного числа");
+    }
+    else 
+    {
+        Console.WriteLine("Конечный результат:");
+        while (ccount <ccount2)
+        {
+            Console.WriteLine($"{array2[ccount]}");
+            ccount++;
+        }
     }
 }
