@@ -23,23 +23,82 @@ if (choise == 1)
         arr[count] = Convert.ToInt32(Console.ReadLine());
         count++;
     }
+    int count2 = 0;
     for (count = 0; count <i; count++)
     {
         if (arr[count]%2 == 0)
         {
-            fin[count] = arr[i];
+            count2++;
         }
     }
-    int size = sizeof(fin);
-    count = 0;
-    Console.WriteLine($"Конечный результат:");
-    while (count <size)
+    int []arr2 = new int[count2];
+    int count3 = 0;
+    for (count = 0; count <i; count++)
     {
-        Console.WriteLine($"{fin[count]}");
+        if (arr[count]%2 == 0)
+        {
+            arr2[count3] = arr[count];
+            count3++;
+        }
+    }
+    count = 0;
+    Console.WriteLine("Конечный результат:");
+    while (count <count2)
+    {
+        Console.WriteLine($"{arr2[count]}");
         count++;
     }
 }
 if (choise == 2)
 {
-
+    Console.WriteLine("Введите количество элементов для массива, который вы хотите задать");
+    int k = 0;
+    k = Convert.ToInt32(Console.ReadLine());
+    int[] array = new int[k];
+    int ccount = 0;
+    Console.WriteLine("Будет сформирован массив из случайных чисел в диапазоне от -100 до 100 ");
+    Random r = new Random();
+    while (ccount <k)
+    {
+        array[ccount] = r.Next(-100,100);
+        ccount++;
+    }
+    ccount = 0;
+    int ccount2 = 0;
+    for (ccount = 0; ccount <k; ccount++)
+    {
+        if (array[ccount]%2 == 0)
+        {
+            ccount2++;
+        }
+    }
+    int []array2 = new int[ccount2];
+    int ccount3 = 0;
+    for (ccount = 0; ccount <k; ccount++)
+    {
+        if (array[ccount]%2 == 0)
+        {
+            array2[ccount3] = array[ccount];
+            ccount3++;
+        }
+    }
+    Console.WriteLine("Если вы хотите увидеть весь сформированный массив, введите 1, если хотите просто продолжить, введите любое число кроме единицы");
+    int choise2 = 0;
+    choise2 = Convert.ToInt32(Console.ReadLine());
+    ccount = 0;
+    if (choise2 == 1)
+    {
+        while (ccount <ccount2)
+        {
+            Console.WriteLine($"{array2[ccount]}");
+            ccount++;
+        }
+    }
+    ccount = 0;
+    Console.WriteLine("Конечный результат:");
+    while (ccount <ccount2)
+    {
+        Console.WriteLine($"{array2[ccount]}");
+        ccount++;
+    }
 }
