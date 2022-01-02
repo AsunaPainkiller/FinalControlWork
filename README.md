@@ -5,3 +5,4 @@
 - Программа написана на c#.
 - Код находится на ветке master.
 - Для запуска необходимо ввести "dotnet run" в терминал.
+- Ссылка на блок-схему https://drive.google.com/file/d/1ijoegD47sDuIPbJ0FT--ePbzJcVPSfR1/view?usp=sharing
